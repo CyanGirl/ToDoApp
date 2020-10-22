@@ -1,0 +1,61 @@
+body {
+  background-color: rgb(253, 205, 205);
+  padding: 8px;
+  width: 70vw;
+  margin: auto;
+}
+.button {
+  background-color: rgb(124, 46, 226);
+  border-width: 0px;
+  padding: 6px;
+  color: white;
+}
+.button:hover {
+  background-color: transparent;
+  color: black;
+  border: 2px solid black;
+}
+input {
+  padding: 6px;
+  border-radius: 4px;
+}
+h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 6px;
+}
+.tasks {
+  padding: 8px;
+  background-color: rgb(124, 46, 226);
+  width: 50vw;
+  color: aliceblue;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.links {
+  padding: 8px;
+}
+.update {
+  text-decoration: none;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(105, 34, 172);
+  color: rgb(7, 4, 4);
+  padding: 5px;
+}
+.delete {
+  padding: 5px;
+  text-decoration: none;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(248, 42, 42);
+  color: rgb(10, 7, 7);
+}
+.delete:hover {
+  background-color: rgb(253, 43, 43);
+}
+.update:hover {
+  background-color: rgb(132, 42, 216);
+  color: white;
+}

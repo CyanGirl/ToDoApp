@@ -1,0 +1,27 @@
+{% load static %}
+<link rel="stylesheet" type="text/CSS" href="{%static 'tasks/style.css' %}" />
+<br />
+
+<h2>To Do App</h2>
+
+<form method="POST" action="/">
+  {%csrf_token%} {{form.title}}
+  <input type="submit" class="button" value="New Task" />
+</form>
+<br />
+{%for task in tasks%}
+<div class="flex">
+  <div class="tasks">
+    {% if task.complete == True %}
+    <strike>{{task}}</strike>
+    {%else%}
+    <span>{{task}}</span>
+    {%endif%}
+  </div>
+  <div class="links">
+    <a class="update" href="{% url 'tasks:update' task.id %}">Update</a>
+    <a class="delete" href="{% url 'tasks:delete' task.id %}">Delete</a>
+  </div>
+</div>
+<br />
+{%endfor%}
